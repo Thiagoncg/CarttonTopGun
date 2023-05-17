@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PlaneController1 : MonoBehaviour
 {
+
+    PowerApp powerApp = new PowerApp();
     private float horizontalInput;
     private float verticalInput;
     private float speed = 0.3f;
@@ -21,6 +23,14 @@ public class PlaneController1 : MonoBehaviour
         transform.Rotate(verticalInput * speed, 0, 0);
 
         transform.position += transform.forward * speed / 20;
+    }
+
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("PowerAp"))
+        {
+            speed = 100f;
+        }
     }
 
 }
