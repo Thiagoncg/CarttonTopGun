@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 17035843}
   - component: {fileID: 17035842}
   m_Layer: 5
-  m_Name: Text (Legacy)
+  m_Name: TextCronometro
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -840,7 +840,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1412824005}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.0141, y: 9.1, z: 24.92}
+  m_LocalPosition: {x: -32.2, y: 9.1, z: 24.92}
   m_LocalScale: {x: 21.99862, y: 12.594482, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -889,6 +889,7 @@ GameObject:
   - component: {fileID: 1518953835}
   - component: {fileID: 1518953834}
   - component: {fileID: 1518953838}
+  - component: {fileID: 1518953839}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -985,13 +986,28 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1518953833}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5afd8c14931aa6546acbc4f13d975a4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   tempoInicial: 50
   textoCronometro: {fileID: 17035842}
+--- !u!114 &1518953839
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1518953833}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6eab5cb0ecf5d7468f66a9944b4c1d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeLevel_txt: {fileID: 17035842}
+  tempoMaximo: 50
+  aviao: {fileID: 938357815}
 --- !u!1001 &1854811071
 PrefabInstance:
   m_ObjectHideFlags: 0

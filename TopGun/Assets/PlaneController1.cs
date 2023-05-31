@@ -29,7 +29,7 @@ public class PlaneController1 : MonoBehaviour
     {
         if (other.CompareTag("PowerAp"))
         {
-            speed = 100f;
+            speed = 1f;
         }
     }
 
