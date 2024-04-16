@@ -11,12 +11,15 @@ public class Timer : MonoBehaviour
     public static bool stopTime;
     public GameObject aviao;
 
-    private void Start() 
+    public GameObject overlayGameOuver;
+    private void Start()
     {
-        stopTime = false;   
+        stopTime = false;
+        //overlayGameOuver.SetActive(false);
     }
 
-    private void Update() {
+    private void Update()
+    {
         if (stopTime == false)
         {
             timelevel = timelevel + Time.deltaTime;
@@ -24,7 +27,9 @@ public class Timer : MonoBehaviour
 
             if (timelevel >= tempoMaximo)
             {
-               aviao.SetActive(false);
+                aviao.SetActive(false);
+                overlayGameOuver.SetActive(true);
+
 
             }
         }

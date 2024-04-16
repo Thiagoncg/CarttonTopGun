@@ -8,7 +8,7 @@ public class PlaneController1 : MonoBehaviour
     PowerApp powerApp = new PowerApp();
     private float horizontalInput;
     private float verticalInput;
-    private float speed = 0.3f;
+    private float speed = 0.9f;
     void Update()
     {
         ControllerPlaneDirection();
